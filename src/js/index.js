@@ -117,6 +117,7 @@ const processMovies = (title,year,page) => {
 
    const buscar = `?s=${title}&type=movie&y=${year}&page=${page}`
    const url = `http://www.omdbapi.com/${buscar}&apikey=c52b4a65`;
+   console.log(url);
    
    findMovies(url).then( (cant) => {
       result = cant;
