@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
       showUserInfo(user);
       showInitialMovies();
    } else{
-      location.href = 'login.html';
+      location.href = './login.html';
    } 
 });   
 
@@ -66,7 +66,7 @@ logout.addEventListener('click', (e) =>{
    e.preventDefault();
    sessionStorage.removeItem('sessionActive');
    sessionStorage.removeItem('lastFindDo');
-   location.href = 'login.html';
+   location.href = './login.html';
 });
 
 /*---------------------------------------------------------------------

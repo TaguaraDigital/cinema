@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
    if (user){
       findMovieId(movieId);
    } else{
-      location.href = 'login.html';
+      location.href = './login.html';
    } 
 });   
 
@@ -56,7 +56,7 @@ const goBack = document.getElementById('goback');
 
 goBack.addEventListener('click', (e) =>{
    e.preventDefault();
-   location.href = 'index.html';
+   location.href = './index.html';
 })
 
 /* --------------------------------------------
@@ -68,7 +68,7 @@ logout.addEventListener('click', (e) =>{
    e.preventDefault();
    sessionStorage.removeItem('sessionActive');
    sessionStorage.removeItem('lastFindDo');
-   location.href = 'login.html';
+   location.href = './login.html';
 });
 
 

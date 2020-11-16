@@ -134,7 +134,7 @@ signLogin.addEventListener('submit', (e) =>{
       if (noErrors){
          sessionStorage.setItem('sessionActive', nameLogin.value.trim());
          signLogin.reset();
-         location.href = 'index.html';
+         location.href = './index.html';
       };
 });
 
@@ -167,7 +167,7 @@ signUp.addEventListener('submit', (e) =>{
       addUser(userInfo);
       sessionStorage.setItem('sessionActive', nameSignUp.value);
       signUp.reset();
-      location.href = 'index.html';
+      location.href = './index.html';
    }
 });
 
