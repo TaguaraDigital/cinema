@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 const sessionActive = () => {
    const currentURL = location;
    let sessionActive = sessionStorage.getItem('sessionActive') || 0;
-   if ((currentURL.pathname === '/' || currentURL.pathname === '/index.html') && (sessionActive !== 0)) {
+   if ((currentURL.pathname === '/' || currentURL.pathname === './index.html') && (sessionActive !== 0)) {
          return sessionActive;
    } else {
       return false;
